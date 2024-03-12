@@ -14,6 +14,7 @@ import java.util.Date;
 import java.util.Scanner;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
 /**
@@ -92,7 +93,7 @@ public class MyServlet extends HttpServlet {
 		double windSpeed = jsonObject.getAsJsonObject("wind").get("speed").getAsDouble();
 		
 		// Weather Condition
-		String weatherCondition = jsonObject.getAsJsonArray("weather").get(0).getAsString();
+		JsonElement weatherCondition = jsonObject.getAsJsonArray("weather").get(0).getAsJsonObject().get("main");
 		
 		// THIS DATA CANT BE PRESENTED BY HTML SO WE WILL USE JSP
 		// Set the data as request attributes (for sending the jsp page)
@@ -105,6 +106,8 @@ public class MyServlet extends HttpServlet {
 		request.setAttribute("weatherData", responseContent.toString());
 		
 		connection.disconnect();
+		// Forward the request to the weather.jsp page for rendering
+		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 
 }

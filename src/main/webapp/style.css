@@ -1,0 +1,135 @@
+@charset "ISO-8859-1";
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right,  #2b40ff,#07121a);
+}
+
+.mainContainer {
+  width: 25rem;
+  height: auto;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+}
+
+.searchInput {
+  width: 100%;
+  display: flex;
+  padding: 1rem 1rem;
+  justify-content: center;
+}
+
+.searchInput input {
+  width: 100%;
+  height: 2rem;
+  outline: none;
+  font-size: 1rem;
+  color: #525050;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid #b3b3b3;
+}
+
+.searchInput input:focus {
+  border: 1px solid #9c9dde;
+}
+
+.searchInput button {
+  width: 2.2rem;
+  height: 2rem;
+  cursor: pointer;
+  color: #9b9b9b;
+  border-radius: 50%;
+  margin-left: 0.4rem;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  border: 1px solid #b3b3b3;
+}
+
+.searchInput button:hover {
+  color: #fff;
+  background-color: #9c9dde;
+  border: 1px solid #9c9dde;
+}
+
+.weatherIcon {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  justify-content: center;
+}
+
+.weatherIcon img {
+  max-width: 100%;
+  width: 8rem;
+}
+
+.weatherDetails .temp{
+ font-size: 2rem;
+}
+.cityDetails {
+  color: #323232;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.cityDetails .date {
+  color: #323232;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.windDetails {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: space-around;
+}
+
+.windDetails .humidityBox {
+  display: flex;
+  font-size: 1rem;
+  color: #323232;
+}
+
+.windDetails .humidity .humidityValue {
+ text-align: center;
+  font-size: 2rem;
+  color: #323232;
+}
+
+.windDetails .humidityBox img {
+  max-height: 3rem;
+  margin-right: 0.5rem;
+}
+
+.windDetails .windSpeed {
+  display: flex;
+  font-size: 1rem;
+  color: #323232;
+}
+
+.windDetails .windSpeed img {
+  max-height: 3rem;
+  margin-right: 0.5rem;
+}
+
+
+image-logo{
+        height: auto;
+        width: auto;
+        filter: drop-shadow(20px 10px 10px black);
+      }
