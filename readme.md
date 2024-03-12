@@ -417,9 +417,9 @@ switch (val) {
 }
 ```
 
-- `images/weather-logo.png`: The logo image used on the main page.
+- `weather-logo.png`: The logo image used on the main page.
 
-![Weather Logo](images/weather-logo.png)
+![Weather Logo](src/main/webapp/images/weather-logo.png)
 
 ---
 
