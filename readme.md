@@ -60,7 +60,7 @@ To run this application locally, you'll need a Java Development Environment (JDK
 
 - `MyServlet.java`: The main servlet class that handles the HTTP requests and integrates with the OpenWeatherMap API.
 
-_[src/main/java/MyPackage/MyServlet.java](.src/main/java/MyPackage/MyServlet.java)_
+_[src/main/java/MyPackage/MyServlet.java](src/main/java/MyPackage/MyServlet.java)_
 
 ```java
 package MyPackage;
@@ -179,7 +179,7 @@ public class MyServlet extends HttpServlet {
 
 - `index.jsp`: The JSP file for the main page, containing the HTML, CSS, and JavaScript code.
 
-_[src/main/webapp/index.jsp](.src/main/webapp/index.jsp)_
+_[src/main/webapp/index.jsp](src/main/webapp/index.jsp)_
 
 ```jsp
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -243,7 +243,7 @@ _[src/main/webapp/index.jsp](.src/main/webapp/index.jsp)_
 
 - `style.css`: The CSS file containing the styles for the application.
 
-_[src/main/webapp/style.css](.src/main/webapp/style.css)_
+_[src/main/webapp/style.css](src/main/webapp/style.css)_
 
 ```css
 @charset "ISO-8859-1";
@@ -383,7 +383,7 @@ image-logo {
 
 - `myScript.js`: The JavaScript file containing the code for dynamically updating the weather icon based on the current weather conditions.
 
-_[src/main/webapp/myScript.js](.src/main/webapp/myScript.js)_
+_[src/main/webapp/myScript.js](src/main/webapp/myScript.js)_
 
 ```js
 var weatherIcon = document.getElementById("weather-icon");
